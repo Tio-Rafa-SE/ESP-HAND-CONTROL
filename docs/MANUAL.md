@@ -8,7 +8,7 @@ Uma luva que lê a inclinação da sua mão e comanda um carrinho pelo ar, sem r
 
 ---
 
-## Aviso de honestidade técnica
+## Aviso 
 
 Leia isto antes de qualquer coisa. Faz parte do jeito Tio Rafa de trabalhar: dizer o que foi verificado e o que não foi.
 
@@ -19,7 +19,6 @@ Leia isto antes de qualquer coisa. Faz parte do jeito Tio Rafa de trabalhar: diz
 | Compilação com o core Arduino-ESP32 real e gravação em placas | Feitas pelo autor do projeto (Rafael Oliveira), nas suas placas |
 | Funcionamento em placas reais | TESTADO EM HARDWARE pelo autor (Rafael Oliveira, informado em 04/11/2026) |
 
-Na prática: o código foi conferido por análise e por simulação no computador, e o autor do projeto testou a luva e o carro em hardware real e informou que funcionam. Detalhe: o autor informa que o projeto foi testado e funciona; os resultados linha a linha não foram enviados ao pacote, então a matriz do manual segue em branco para a sua turma registrar o que observar. A sua montagem pode ter diferenças: preencha a tabela de testes (seção 12) e, se algo não compilar ou divergir, abra uma issue no GitHub com a mensagem de erro.
 
 Informações que dependem da sua placa específica estão marcadas como **CONFIRME NA SUA PLACA**. Não invente pino: confira o esquema.
 
@@ -165,7 +164,7 @@ O ESP-NOW permite cifrar a comunicação entre pares conhecidos (chaves PMK e LM
 
 ## 5. Lista de materiais
 
-**Kit pronto:** [Kit Projeto Esp-Hand Control - Prof. Rafael Oliveira](https://www.mamuteeletronica.com.br/kit-projeto-esp-hand-control-prof-rafael-oliveira-21010), na Mamute Eletrônica. O que vem dentro do kit é **INFORMAÇÃO NÃO CONFIRMADA** aqui: confira na página da loja. Sem o kit, monte com a lista abaixo e peças recicladas. Confira com a lista do seu kit da versão 1. Valores de tensão e corrente dependem dos seus motores e da sua bateria: **CONFIRME NA SUA MONTAGEM**.
+**Kit pronto:** [Kit Projeto Esp-Hand Control - Prof. Rafael Oliveira](https://www.mamuteeletronica.com.br/kit-projeto-esp-hand-control-prof-rafael-oliveira-21010), na Mamute Eletrônica.  confira na página da loja. Sem o kit, monte com a lista abaixo e peças recicladas. Confira com a lista do seu kit da versão 1. Valores de tensão e corrente dependem dos seus motores e da sua bateria: **CONFIRME NA SUA MONTAGEM**.
 
 **Luva**
 
@@ -591,7 +590,7 @@ Epicteto, no *Encheirídion* (§1), separa o que depende de nós do que não dep
 - InvenSense. *MPU-6000 and MPU-6050 Register Map and Descriptions.* e *Product Specification* (datasheet do fabricante).
 - STMicroelectronics. *L298 Dual Full-Bridge Driver* (datasheet).
 
-Observação: confira cada link e cada datasheet antes de publicar; endereços mudam.
+
 
 **Filosofia e educação**
 
@@ -613,6 +612,5 @@ Observação: confira cada link e cada datasheet antes de publicar; endereços m
 
 **Créditos**
 
-Projeto, conceito e kits: Prof. Tio Rafa (Rafael Oliveira), Robótica Paula Souza / CPS, com materiais da Mamute Eletrônica. Versão 2.0 reescrita e documentada com apoio de Claude (Anthropic), a ser testada em bancada pela comunidade.
-
+Projeto, conceito e kits: Prof. Tio Rafa (Rafael Oliveira), com materiais da Mamute Eletrônica. Versão 2.0 reescrita e documentada 
 Contato: contato@tiorafa.tec.br | Instagram: @prof.tiorafa | GitHub: Tio-Rafa-SE
