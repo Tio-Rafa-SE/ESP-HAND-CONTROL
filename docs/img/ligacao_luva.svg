@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="t d">
+  <title id="t">Ligação da luva: ESP32 e MPU6050</title>
+  <desc id="d">Quatro fios: 3V3 do ESP32 no VCC do MPU6050, GND no GND, GPIO22 no SCL e GPIO21 no SDA. Para a ESP32-C3 Mini, SDA é GPIO4 e SCL é GPIO5.</desc>
+  <style>
+    text { font-family: "Helvetica Neue", Arial, sans-serif; fill: #0f172a; }
+    .titulo { font-size: 18px; font-weight: 700; text-anchor: middle; }
+    .pino { font-size: 14px; font-weight: 700; }
+    .peq { font-size: 12.5px; fill: #475569; }
+    .placa { fill: #ecfdf5; stroke: #0f766e; stroke-width: 2.5; }
+    .sensor { fill: #eff6ff; stroke: #1d4ed8; stroke-width: 2.5; }
+    .pbox { fill: #ffffff; stroke: #475569; stroke-width: 1.5; }
+    .vcc { stroke: #dc2626; stroke-width: 3.5; fill: none; }
+    .gnd { stroke: #111827; stroke-width: 3.5; fill: none; }
+    .scl { stroke: #d97706; stroke-width: 3.5; fill: none; }
+    .sda { stroke: #0f766e; stroke-width: 3.5; fill: none; }
+    .nota { fill: #fffbeb; stroke: #b45309; stroke-width: 1.5; }
+  </style>
+  <rect width="920" height="520" fill="#f8fafc"/>
+
+  <!-- ESP32 -->
+  <rect class="placa" x="50" y="40" width="250" height="330" rx="14"/>
+  <text class="titulo" x="175" y="72">ESP32 (DevKit)</text>
+  <rect class="pbox" x="190" y="100" width="110" height="34" rx="5"/><text class="pino" x="200" y="123">3V3</text>
+  <rect class="pbox" x="190" y="150" width="110" height="34" rx="5"/><text class="pino" x="200" y="173">GND</text>
+  <rect class="pbox" x="190" y="200" width="110" height="34" rx="5"/><text class="pino" x="200" y="223">GPIO22</text>
+  <rect class="pbox" x="190" y="250" width="110" height="34" rx="5"/><text class="pino" x="200" y="273">GPIO21</text>
+  <text class="peq" x="62" y="223">SCL</text>
+  <text class="peq" x="62" y="273">SDA</text>
+  <text class="peq" x="62" y="333">botão: BOOT (GPIO0)</text>
+  <text class="peq" x="62" y="351">LED: GPIO2 (se houver)</text>
+
+  <!-- MPU6050 -->
+  <rect class="sensor" x="620" y="40" width="250" height="400" rx="14"/>
+  <text class="titulo" x="745" y="72">MPU6050 (GY-521)</text>
+  <rect class="pbox" x="620" y="100" width="100" height="34" rx="5"/><text class="pino" x="632" y="123">VCC</text>
+  <rect class="pbox" x="620" y="150" width="100" height="34" rx="5"/><text class="pino" x="632" y="173">GND</text>
+  <rect class="pbox" x="620" y="200" width="100" height="34" rx="5"/><text class="pino" x="632" y="223">SCL</text>
+  <rect class="pbox" x="620" y="250" width="100" height="34" rx="5"/><text class="pino" x="632" y="273">SDA</text>
+  <rect class="pbox" x="620" y="300" width="100" height="34" rx="5" opacity="0.55"/><text class="pino" x="632" y="323" opacity="0.7">XDA</text>
+  <rect class="pbox" x="620" y="340" width="100" height="34" rx="5" opacity="0.55"/><text class="pino" x="632" y="363" opacity="0.7">XCL</text>
+  <rect class="pbox" x="620" y="380" width="100" height="34" rx="5" opacity="0.55"/><text class="pino" x="632" y="403" opacity="0.7">AD0</text>
+  <text class="peq" x="735" y="323">não usado</text>
+  <text class="peq" x="735" y="363">não usado</text>
+  <text class="peq" x="735" y="403">GND = 0x68</text>
+  <text class="peq" x="735" y="432" opacity="0">.</text>
+
+  <!-- Fios -->
+  <path class="vcc" d="M300,117 L620,117"/>
+  <path class="gnd" d="M300,167 L620,167"/>
+  <path class="scl" d="M300,217 L620,217"/>
+  <path class="sda" d="M300,267 L620,267"/>
+  <text class="peq" x="460" y="108" text-anchor="middle">alimentar pelo 3V3 mantém o I2C em 3,3 V</text>
+
+  <!-- Notas -->
+  <rect class="nota" x="50" y="400" width="400" height="100" rx="10"/>
+  <text class="pino" x="64" y="425">ESP32-C3 Mini</text>
+  <text class="peq" x="64" y="446">SDA = GPIO4 | SCL = GPIO5 | botão BOOT = GPIO9</text>
+  <text class="peq" x="64" y="464">(3V3 e GND iguais.) Confira o pinout da SUA placa:</text>
+  <text class="peq" x="64" y="482">LOLIN C3 Mini e C3 Super Mini têm pinos I2C padrão diferentes.</text>
+  <rect class="nota" x="470" y="455" width="400" height="48" rx="10"/>
+  <text class="peq" x="484" y="475">Fixe o sensor firme na luva. Se os eixos ficarem trocados,</text>
+  <text class="peq" x="484" y="493">use TROCAR_PITCH_ROLL e INVERTER_* no config_luva.h.</text>
+</svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 580" role="img" aria-labelledby="t d">
+  <title id="t">Mapa de inclinação da mão para o movimento do carro</title>
+  <desc id="d">Grade de nove regiões: o eixo vertical é a inclinação para frente ou para trás (dedos para baixo ou para cima), o eixo horizontal é a inclinação para a esquerda ou direita. O centro é a zona morta, onde o carro fica parado.</desc>
+  <style>
+    text { font-family: "Helvetica Neue", Arial, sans-serif; fill: #0f172a; text-anchor: middle; }
+    .eixo { font-size: 14px; font-weight: 700; fill: #334155; }
+    .nome { font-size: 17px; font-weight: 700; }
+    .sub { font-size: 13px; fill: #334155; }
+    .reta { fill: #d1fae5; stroke: #0f766e; stroke-width: 2; }
+    .giro { fill: #ccfbf1; stroke: #0f766e; stroke-width: 2; }
+    .curva { fill: #fef3c7; stroke: #b45309; stroke-width: 2; }
+    .parado { fill: #e2e8f0; stroke: #475569; stroke-width: 2; stroke-dasharray: 7 5; }
+  </style>
+  <rect width="760" height="580" fill="#f8fafc"/>
+  <text class="eixo" x="400" y="34">inclinar para a ESQUERDA          roll (lado da mão)          inclinar para a DIREITA</text>
+  <text class="eixo" transform="translate(26,300) rotate(-90)">dedos para CIMA          pitch          dedos para BAIXO</text>
+
+  <!-- Linha de cima: dedos para baixo = frente -->
+  <rect class="curva" x="60" y="60" width="210" height="150" rx="10"/>
+  <text class="nome" x="165" y="125">Frente + esquerda</text>
+  <text class="sub" x="165" y="147">curva aberta</text>
+  <rect class="reta" x="280" y="60" width="210" height="150" rx="10"/>
+  <text class="nome" x="385" y="115">FRENTE</text>
+  <text class="sub" x="385" y="137">dedos para baixo</text>
+  <text class="sub" x="385" y="155">quanto mais inclina, mais rápido</text>
+  <rect class="curva" x="500" y="60" width="210" height="150" rx="10"/>
+  <text class="nome" x="605" y="125">Frente + direita</text>
+  <text class="sub" x="605" y="147">curva aberta</text>
+
+  <!-- Linha do meio -->
+  <rect class="giro" x="60" y="220" width="210" height="150" rx="10"/>
+  <text class="nome" x="165" y="285">Gira à esquerda</text>
+  <text class="sub" x="165" y="307">no lugar</text>
+  <rect class="parado" x="280" y="220" width="210" height="150" rx="10"/>
+  <text class="nome" x="385" y="285">PARADO</text>
+  <text class="sub" x="385" y="307">zona morta (12 graus)</text>
+  <rect class="giro" x="500" y="220" width="210" height="150" rx="10"/>
+  <text class="nome" x="605" y="285">Gira à direita</text>
+  <text class="sub" x="605" y="307">no lugar</text>
+
+  <!-- Linha de baixo: dedos para cima = ré -->
+  <rect class="curva" x="60" y="380" width="210" height="150" rx="10"/>
+  <text class="nome" x="165" y="445">Ré + esquerda</text>
+  <text class="sub" x="165" y="467">curva de ré</text>
+  <rect class="reta" x="280" y="380" width="210" height="150" rx="10"/>
+  <text class="nome" x="385" y="435">RÉ</text>
+  <text class="sub" x="385" y="457">dedos para cima</text>
+  <rect class="curva" x="500" y="380" width="210" height="150" rx="10"/>
+  <text class="nome" x="605" y="445">Ré + direita</text>
+  <text class="sub" x="605" y="467">curva de ré</text>
+
+  <text class="sub" x="385" y="560">Zona morta: 12 graus. Comando máximo: 40 graus. Ambos ajustáveis em config_luva.h.</text>
+</svg>
