@@ -8,17 +8,6 @@ Uma luva que lê a inclinação da sua mão e comanda um carrinho pelo ar, sem r
 
 ---
 
-## Aviso 
-
-Leia isto antes de qualquer coisa. Faz parte do jeito Tio Rafa de trabalhar: dizer o que foi verificado e o que não foi.
-
-| Etapa | Situação |
-|---|---|
-| Revisão do código e da lógica | VALIDADO POR ANÁLISE |
-| Testes automáticos no computador (lógica, protocolo, comportamento do carro e da luva, 2 placas x 2 versões do core, com simulação das bibliotecas do ESP32) | VALIDADO POR ANÁLISE (rodou e passou) |
-| Compilação com o core Arduino-ESP32 real e gravação em placas | Feitas pelo autor do projeto (Rafael Oliveira), nas suas placas |
-| Funcionamento em placas reais | TESTADO EM HARDWARE pelo autor (Rafael Oliveira, informado em 04/11/2026) |
-
 
 Informações que dependem da sua placa específica estão marcadas como **CONFIRME NA SUA PLACA**. Não invente pino: confira o esquema.
 
